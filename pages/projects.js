@@ -1,5 +1,14 @@
+import Header from '../components/Header'
+
 function About() {
-    return <div>Projetos</div>
+    return (
+      <>
+        <Header />
+        <div>
+          Projetos
+        </div>
+      </>
+    )
   }
   
 export default About
