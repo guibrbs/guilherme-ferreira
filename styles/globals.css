@@ -2,8 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
-body{
+.dark{
     @apply bg-[#202023] text-textLight-500;
+}
+
+.light {
+    @apply bg-[#F0E7DB] text-dark-500;
 }
 
 @layer base {
