@@ -1,12 +1,13 @@
 import Avatar from './Avatar'
 import { BsGithub } from "react-icons/bs";
 import { BsLinkedin } from "react-icons/bs";
+import Link from 'next/link';
 
-export default function MainContent(){
+export function MainContent(){
     return(
         <div className='flex w-full h-full justify-center mt-20'>
             <section className='w-full max-w-customWidth h-full max-h-max flex flex-1 justify-center space-x-12 relative after:absolute 
-            after:content[""] after:w-full after:h-px after:bg-dark-300 dark:after:bg-textLight-500 after:-bottom-16'>
+                after:content[""] after:w-full after:h-px after:bg-light-700 dark:after:bg-dark-100 after:-bottom-16'>
                 <Avatar />
                 <div className='w-full max-w-txtWidth'>
                     <p className='text-5xl font-bold '>Guilherme Ferreira</p>
@@ -23,16 +24,22 @@ export default function MainContent(){
                         font-bold text-xl rounded-lg hover:brightness-110 transition-all'>
                             Entre em contato
                         </button>
-                        <a href="" className="flex justify-center relative h-12 w-12 items-center hover:scale-110 transition ease-in-out hover:bg-light-100 
-                        hover:dark:bg-dark-100 rounded-md hover:after:block after:hidden after:-bottom-9 after:absolute after:content-['Github'] after:py-1 after:px-2 
-                        after:rounded-md after:bg-light-100 dark:after:bg-dark-100 text-sm font-medium after:transition after:ease-in-out after:duration-300
-                        after:font-semibold">
-                            <BsGithub size={32}/>
-                        </a>
-                        <a href="" className="flex justify-center relative h-12 w-12 items-center hover:scale-110 transition ease-in-out hover:bg-light-100 
-                        hover:dark:bg-dark-100 rounded-md hover:after:block after:hidden after:-bottom-9 after:absolute after:content-['Linkedin'] after:py-1 after:px-2 
-                        after:rounded-md after:bg-light-100 dark:after:bg-dark-100 text-sm font-medium after:transition after:ease-in-out after:duration-300
-                        after:font-semibold"><BsLinkedin size={32} /></a>
+                        <Link href="https://github.com/guibrbs">
+                            <a target="_blank" rel="noopener noreferrer"
+                            className="flex justify-center relative h-12 w-12 items-center hover:scale-110 transition ease-in-out hover:bg-light-100 
+                            hover:dark:bg-dark-100 rounded-md hover:after:block after:hidden after:-bottom-9 after:absolute after:content-['Github'] after:py-1 after:px-2 
+                            after:rounded-md after:bg-light-100 dark:after:bg-dark-100 text-sm font-medium after:transition after:ease-in-out after:duration-300
+                            after:font-semibold">
+                                <BsGithub size={32}/>
+                            </a>
+                        </Link>
+                        <Link href="https://www.linkedin.com/in/guibrbs/">
+                            <a target="_blank" rel="noopener noreferrer"
+                            className="flex justify-center relative h-12 w-12 items-center hover:scale-110 transition ease-in-out hover:bg-light-100 
+                            hover:dark:bg-dark-100 rounded-md hover:after:block after:hidden after:-bottom-9 after:absolute after:content-['Linkedin'] after:py-1 after:px-2 
+                            after:rounded-md after:bg-light-100 dark:after:bg-dark-100 text-sm font-medium after:transition after:ease-in-out after:duration-300
+                            after:font-semibold"><BsLinkedin size={32} /></a>
+                        </Link>
                     </div>
                 </div>
             </section>
