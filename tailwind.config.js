@@ -16,17 +16,24 @@ module.exports = {
           500: '#744EC9',
         },
         light: {
+          100: '#FFF6EA',
           300: '#F4EDE4',
           500: '#F0E7DB',
         },
         dark: {
+          100: '#2E2E31',
           300: '#202023',
           500: '#1D1D20',
         },
         textLight: {
           300: '#f6f6f6',
-          500: '#eeee'
+          500: '#EEEEEE',
+          600: '#C2C2C2'
         }
+      },
+      maxWidth: {
+        customWidth: '44rem',
+        txtWidth: '413px'
       }
     },
   },
