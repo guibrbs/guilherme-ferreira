@@ -19,6 +19,7 @@ module.exports = {
           100: '#FFF6EA',
           300: '#F4EDE4',
           500: '#F0E7DB',
+          700: '#bdb5ac',
         },
         dark: {
           100: '#2E2E31',
@@ -33,6 +34,7 @@ module.exports = {
       },
       maxWidth: {
         customWidth: '44rem',
+        imgWidth: '329px',
         txtWidth: '413px'
       }
     },
