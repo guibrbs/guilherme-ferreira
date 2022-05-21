@@ -5,7 +5,7 @@ import Link from 'next/link';
 
 export function MainContent(){
     return(
-        <div className='flex w-full h-full justify-center mt-20'>
+        <div className='flex w-full h-full justify-center mt-36'>
             <section className='w-full max-w-customWidth h-full max-h-max flex flex-1 justify-center space-x-12 relative after:absolute 
                 after:content[""] after:w-full after:h-px after:bg-light-700 dark:after:bg-dark-100 after:-bottom-16'>
                 <Avatar />
