@@ -8,7 +8,7 @@ export function Banner() {
       description:
         'Feito exclusivamente para coordenadores e pessoas da gestão da Universidade de Brasília, com o intuito de auxiliar a \
              administração das matérias ofertadas, indicando através de gráficos disponíveis no Metabase.',
-      id: 'one',
+      id: '1',
     },
     {
       link: '/projetos/NLW',
@@ -18,7 +18,7 @@ export function Banner() {
       description:
         'Projeto pessoal seguindo os passos no NLW Return Impulse, realizado pela Rocketseat, com o objetivo de aprender novas tecnologias, \
         melhorar o desenvolvimento técnico e introduzir o desenvolvimento mobile.',
-      id: 'two',
+      id: '2',
     },
     {
       link: '/projetos/SignIn',
@@ -28,7 +28,7 @@ export function Banner() {
       description:
         'Mini projeto pessoal com o objetivo de aprimorar as habilidades técnicas no qual envolve o desenvolvimento de formulários de sign in e sign up, alternando entre si \
             com animações sem nenhum framework.',
-      id: 'three',
+      id: '3',
     },
     {
       link: '/projetos/Landing-Page',
@@ -38,7 +38,7 @@ export function Banner() {
       description:
         'Projeto pessoal com o objetivo de aprimorar as habilidades técnicas envolvendo o desenvolvimento de uma Landing Page responsiva em qualquer dispositivo, além de incluir o modo noturno\
             animado.',
-      id: 'four',
+      id: '4',
     },
     {
       link: '/projetos/Clone-Netflix',
@@ -48,7 +48,7 @@ export function Banner() {
       description:
         'Projeto pessoal com o objetivo de aprimorar as habilidades técnicas envolvendo o desenvolvimento de uma interface parecida com a da Netflix, utilizando imagens captadas \
             através de uma API open source.',
-      id: 'five',
+      id: '5',
     },
     {
       link: '/projetos/Interactive-Rating',
@@ -57,7 +57,7 @@ export function Banner() {
       title: 'Interactive Rating Component',
       description:
         'Projeto pessoal com o objetivo de aprimorar as habilidades técnicas envolvendo o desenvolvimento um componenete interativo de classificação. ',
-      id: 'six',
+      id: '6',
     },
     {
       link: '/projetos/Covid-Tracker',
@@ -67,7 +67,7 @@ export function Banner() {
       description:
         'Projeto pessoal com o objetivo de aprimorar as habilidades técnicas envolvendo o desenvolvimento de um rastreador de casos de \
             COVID-19 no Brasil e no mundo, através de uma API open source.',
-      id: 'seven',
+      id: '7',
     },
   ]
   return (
@@ -77,25 +77,31 @@ export function Banner() {
         {banner_map.map((banner) => {
           return (
             <a href={banner.link} className="group mt-12" key={banner.id}>
-              <div className="flex h-60 w-full rounded-3xl border border-light-700 dark:border-dark-100 relative">
-                <div className="w-full max-w-xs h-full bg-light-100 dark:bg-dark-100 absolute rounded-3xl group-hover:max-w-full z-0 
-                transition-all duration-500"/>
+              <div className="relative flex h-60 w-full rounded-3xl border border-light-700 dark:border-dark-100">
+                <div
+                  className="absolute z-0 h-full w-full max-w-xs rounded-3xl bg-light-100 transition-all duration-500 
+                ease-in-out group-hover:max-w-full dark:bg-dark-100"
+                />
                 <img
                   src={banner.img}
                   alt={banner.alt}
-                  className="w-full max-w-imgWidth rounded-l-3xl z-10"
+                  className="z-10 w-full max-w-imgWidth rounded-l-3xl"
                 />
                 <div className="relative ml-6 mr-6 flex h-full w-full flex-col justify-center">
                   <h1 className="mb-1 text-2xl font-bold">{banner.title}</h1>
                   <p className="text-lg leading-5 dark:text-textLight-600">
                     {banner.description}
                   </p>
-                  <p className="mt-1 self-end text-xl font-bold relative">
+                  <p className="relative mt-1 self-end text-xl font-bold">
                     Saiba mais
-                    <span className="absolute -bottom-px left-1/2 w-0 h-px bg-elementary-300 dark:bg-brand-300 group-hover:w-1/2 
-                    transition-all duration-500"/>
-                    <span className="absolute -bottom-px right-1/2 w-0 h-px bg-elementary-300 dark:bg-brand-300 group-hover:w-1/2 
-                    transition-all duration-500"/>
+                    <span
+                      className="absolute -bottom-px left-1/2 h-px w-0 bg-elementary-300 transition-all duration-500 
+                    ease-in-out group-hover:w-1/2 dark:bg-brand-300"
+                    />
+                    <span
+                      className="absolute -bottom-px right-1/2 h-px w-0 bg-elementary-300 transition-all duration-500 
+                    ease-in-out group-hover:w-1/2 dark:bg-brand-300"
+                    />
                   </p>
                 </div>
               </div>
