@@ -1,13 +1,11 @@
-import { Header } from '../components/Header'
+import { Banner } from '../components/Banner'
+import Layout from '../components/Layout'
 
 function Projetos() {
     return (
-      <>
-        <Header />
-        <div>
-          Projetos
-        </div>
-      </>
+      <Layout>
+          <Banner />
+      </Layout>
     )
   }
   
