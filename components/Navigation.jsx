@@ -2,6 +2,7 @@ import { LayoutGroup } from 'framer-motion'
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { BsGithub } from "react-icons/bs";
+import { UnderlineLayout } from './UnderlineLayout';
 
 export function Navigation() {
   const router = useRouter()
@@ -40,18 +41,7 @@ export function Navigation() {
               {name}
             </a>
           </Link>
-          <span className={`absolute -bottom-px left-1/2 h-px w-0 bg-elementary-300 duration-300 ease-in-out 
-            hover:duration-500 group-hover:w-1/2 group-hover:transition-all dark:bg-brand-300 ${
-                router.pathname === href
-                ? 'w-1/2'
-                : ''
-            }`}/>
-          <span className={`absolute -bottom-px right-1/2 h-px w-0 bg-elementary-300 duration-300 ease-in-out 
-            hover:duration-500 group-hover:w-1/2 group-hover:transition-all dark:bg-brand-300 ${
-                router.pathname === href
-                ? 'w-1/2'
-                : ''
-            }`}/>
+          <UnderlineLayout href={href}/>
         </div>
       ))}
     </LayoutGroup>
