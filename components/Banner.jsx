@@ -1,4 +1,7 @@
-export function Banner() {
+import Link from "next/link"
+import {UnderlineLayout} from './UnderlineLayout'
+
+export function Banner({ homepage }) {
   const banner_map = [
     {
       link: '/projetos/INDICAA',
@@ -71,44 +74,67 @@ export function Banner() {
     },
   ]
   return (
-    <div className="flex h-full max-h-max w-full justify-center">
-      <section className="mt-32 flex w-full max-w-customWidth flex-col items-center">
-        <h1 className="text-3xl font-bold">PRINCIPAIS PROJETOS</h1>
-        {banner_map.map((banner) => {
-          return (
-            <a href={banner.link} className="group mt-12" key={banner.id}>
-              <div className="relative flex h-60 w-full rounded-3xl border border-light-700 dark:border-dark-100">
-                <div
-                  className="absolute z-0 h-full w-full max-w-xs rounded-3xl bg-light-100 transition-all duration-500 
-                ease-in-out group-hover:max-w-full dark:bg-dark-100"
-                />
-                <img
-                  src={banner.img}
-                  alt={banner.alt}
-                  className="z-10 w-full max-w-imgWidth rounded-l-3xl"
-                />
-                <div className="relative ml-6 mr-6 flex h-full w-full flex-col justify-center">
-                  <h1 className="mb-1 text-2xl font-bold">{banner.title}</h1>
-                  <p className="text-lg leading-5 dark:text-textLight-600">
-                    {banner.description}
-                  </p>
-                  <p className="relative mt-1 self-end text-xl font-bold">
-                    Saiba mais
-                    <span
-                      className="absolute -bottom-px left-1/2 h-px w-0 bg-elementary-300 transition-all duration-500 
-                    ease-in-out group-hover:w-1/2 dark:bg-brand-300"
-                    />
-                    <span
-                      className="absolute -bottom-px right-1/2 h-px w-0 bg-elementary-300 transition-all duration-500 
-                    ease-in-out group-hover:w-1/2 dark:bg-brand-300"
-                    />
-                  </p>
-                </div>
-              </div>
-            </a>
+    <>
+      <Banner_Layout homepage={homepage}>
+        {banner_map
+          .filter(
+            homepage
+              ? (banner) => banner.id == '1' || banner.id == '2'
+              : (banner) => banner.id
           )
-        })}
-      </section>
-    </div>
+          .map((banner) => {
+            return (
+              <a href={banner.link} className="group mt-12" key={banner.id}>
+                <div className="relative flex h-60 w-full rounded-3xl border border-light-700 dark:border-dark-100">
+                  <div
+                    className="absolute z-0 h-full w-full max-w-xs rounded-3xl bg-light-100 transition-all duration-500 
+                    ease-in-out group-hover:max-w-full dark:bg-dark-100"
+                  />
+                  <img
+                    src={banner.img}
+                    alt={banner.alt}
+                    className="z-10 w-full max-w-imgWidth rounded-l-3xl"
+                  />
+                  <div className="relative ml-6 mr-6 flex h-full w-full flex-col justify-center">
+                    <h1 className="mb-1 text-2xl font-bold">{banner.title}</h1>
+                    <p className="text-lg leading-5 dark:text-textLight-600">
+                      {banner.description}
+                    </p>
+                    <p className="relative mt-1 self-end text-xl font-bold">
+                      Saiba mais
+                      <UnderlineLayout />
+                    </p>
+                  </div>
+                </div>
+              </a>
+            )
+          })}
+      </Banner_Layout>
+    </>
   )
 }
+
+const Banner_Layout = ({ children, homepage }) => (
+  <div className="flex h-full max-h-max w-full justify-center">
+    <section className="mt-32 flex w-full max-w-customWidth flex-col items-center">
+      <h1 className="text-3xl font-bold">
+        {homepage ? 'PRINCIPAIS PROJETOS' : 'PROJETOS'}
+      </h1>
+      {children}
+      {homepage 
+      ?
+      <>
+        <Link href={'/projetos'}>
+          <a className="mt-12 text-2xl font-medium relative group hover:brightness-110 duration-0">
+            Explore mais projetos
+            <UnderlineLayout />  
+          </a>
+        </Link>
+      </>
+      :
+      <>
+      </>
+      }
+    </section>
+  </div>
+)

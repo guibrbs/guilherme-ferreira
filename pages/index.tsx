@@ -7,7 +7,7 @@ const Home: NextPage = () => {
   return (
     <Layout>
       <MainContent />
-      <Banner />
+      <Banner homepage={true}/>
     </Layout>
   )
 }
