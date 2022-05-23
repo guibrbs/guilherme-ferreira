@@ -6,6 +6,8 @@ import {
   OrbitControls,
   Bounds,
   BakeShadows,
+  Shadow,
+  ContactShadows,
 } from '@react-three/drei'
 
 const Model = () => {
@@ -52,6 +54,7 @@ export function Model3D(){
               </Bounds>
               <BakeShadows />
             </Suspense>
+            <ContactShadows position={[0, -0.75, 0]} opacity={0.4} scale={10} blur={1.5} far={0.8} />
             <OrbitControls
               makeDefault
               minAzimuthAngle={0}
