@@ -12,8 +12,8 @@ module.exports = {
           500: '#F6AD55',
         },
         elementary: {
-          300: '#8A5CEF',
-          500: '#744EC9',
+          300: '#3CB7B4',
+          500: '#30918F',
         },
         light: {
           100: '#FFF6EA',
@@ -36,6 +36,9 @@ module.exports = {
         customWidth: '44rem',
         imgWidth: '329px',
         txtWidth: '413px'
+      },
+      fontSize: {
+        customSize: '1.75rem',
       }
     },
   },
