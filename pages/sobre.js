@@ -1,5 +1,13 @@
+import Head from "next/head"
+
 function Sobre() {
-    return <div>About</div>
-  }
-  
+  return (
+    <div>
+      <Head>
+        <title>Sobre | Guilherme Ferreira</title>
+      </Head>
+    </div>
+  )
+}
+
 export default Sobre
