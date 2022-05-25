@@ -1,6 +1,6 @@
 import Head from "next/head"
 import Layout from "../components/Layout"
-import { Projects } from '../components/Projects'
+import { About } from '../components/About'
 
 function Sobre() {
   return (
@@ -8,7 +8,7 @@ function Sobre() {
       <Head>
         <title>Sobre | Guilherme Ferreira</title>
       </Head>
-      <Projects />
+      <About />
     </Layout>
   )
 }
