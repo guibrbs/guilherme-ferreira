@@ -1,12 +1,15 @@
 import Head from "next/head"
+import Layout from "../components/Layout"
+import { Projects } from '../components/Projects'
 
 function Sobre() {
   return (
-    <div>
+    <Layout>
       <Head>
         <title>Sobre | Guilherme Ferreira</title>
       </Head>
-    </div>
+      <Projects />
+    </Layout>
   )
 }
 
