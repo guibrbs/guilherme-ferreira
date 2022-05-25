@@ -4,7 +4,7 @@ import {UnderlineLayout} from './UnderlineLayout'
 export function Banner({ homepage }) {
   const banner_map = [
     {
-      link: '/projetos/INDICAA',
+      link: '/projetos/indicaa',
       img: '/metabase.png',
       alt: 'Metabase',
       title: 'INDICAA',
@@ -14,7 +14,7 @@ export function Banner({ homepage }) {
       id: '1',
     },
     {
-      link: '/projetos/NLW',
+      link: '/projetos/nlw',
       img: '/nlw-impulse.png',
       alt: 'Nlw Impulse',
       title: 'Nlw Impulse',
@@ -24,7 +24,7 @@ export function Banner({ homepage }) {
       id: '2',
     },
     {
-      link: '/projetos/SignIn',
+      link: '/projetos/signin',
       img: '/sliding-signin.png',
       alt: 'image-sign-in',
       title: 'Sign in | Sign up',
@@ -34,7 +34,7 @@ export function Banner({ homepage }) {
       id: '3',
     },
     {
-      link: '/projetos/Landing-Page',
+      link: '/projetos/landing-page',
       img: '/landing-page.png',
       alt: 'Landing Page',
       title: 'Landing Page',
@@ -44,7 +44,7 @@ export function Banner({ homepage }) {
       id: '4',
     },
     {
-      link: '/projetos/Clone-Netflix',
+      link: '/projetos/clone-netflix',
       img: '/clone-netflix.png',
       alt: 'Clone Netflix',
       title: 'Clone Netflix',
@@ -54,7 +54,7 @@ export function Banner({ homepage }) {
       id: '5',
     },
     {
-      link: '/projetos/Interactive-Rating',
+      link: '/projetos/interactive-rating',
       img: '/interactive-rating.png',
       alt: 'Interactive Rating Component',
       title: 'Interactive Rating Component',
@@ -63,7 +63,7 @@ export function Banner({ homepage }) {
       id: '6',
     },
     {
-      link: '/projetos/Covid-Tracker',
+      link: '/projetos/covid-tracker',
       img: '/covid-tracker.png',
       alt: 'Covid Tracker',
       title: 'Covid Tracker',
