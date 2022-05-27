@@ -5,6 +5,9 @@ module.exports = {
   ],
   darkMode: 'class',
   theme: {
+    screens: {
+      'max-md': {'max': '820px'}
+    },
     extend: {
       colors: {
         brand: {
@@ -31,6 +34,9 @@ module.exports = {
           300: '#f6f6f6',
           500: '#EEEEEE',
           600: '#C2C2C2'
+        },
+        transitionProperty: {
+          'rotate': 'rotate'
         }
       },
       maxWidth: {
