@@ -85,6 +85,7 @@ export function About() {
               href="https://orcestra.com.br/"
               className="font-extrabold underline decoration-1 dark:text-textLight-500"
               target={'_blank'}
+              rel="noreferrer"
             >
               Orc&apos;estra Gamificação 
             </a>
