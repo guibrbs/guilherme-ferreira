@@ -3,6 +3,6 @@ import Image from 'next/image'
 
 export default function Avatar(){
     return(
-        <Image src={AvatarImage} width={235} height={417} />
+        <Image src={AvatarImage} width={235} height={417} alt={'Avatar'}/>
     )
 }

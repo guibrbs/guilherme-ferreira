@@ -1,3 +1,4 @@
+import Image from "next/image"
 import Link from "next/link"
 import {UnderlineLayout} from './UnderlineLayout'
 
@@ -90,11 +91,9 @@ export function Banner({ homepage }) {
                     className="absolute z-0 h-full w-full max-w-xs rounded-3xl bg-light-100 transition-all duration-500 
                     ease-in-out group-hover:max-w-full dark:bg-dark-100"
                   />
-                  <img
-                    src={banner.img}
-                    alt={banner.alt}
-                    className="z-10 w-full max-w-imgWidth rounded-l-3xl"
-                  />
+                  <div className="z-10 w-full max-w-imgWidth rounded-l-3xl overflow-hidden">
+                    <Image src={banner.img} layout='intrinsic' width={329} height={239} alt={banner.alt} />
+                  </div>
                   <div className="relative ml-6 mr-6 flex h-full w-full flex-col justify-center">
                     <h1 className="mb-1 text-2xl font-bold">{banner.title}</h1>
                     <p className="text-lg leading-5 dark:text-textLight-600">

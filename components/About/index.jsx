@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import { BsFileTextFill } from 'react-icons/bs'
 import { SiGithub, SiGmail, SiLinkedin } from 'react-icons/si'
 import { Habilities } from './Habilities'
@@ -14,13 +15,16 @@ export function About() {
           after:h-px after:w-full after:bg-light-700 after:content-[''] dark:after:bg-dark-100"
         >
           <div className="flex w-full items-end">
-            <img className="h-14 max-h-[56px] w-full max-w-[56px] rounded-full bg-[url('/photo.jpg')] bg-cover bg-center bg-no-repeat" />
+            <div className='w-[56px] h-[56px] overflow-hidden rounded-full flex justify-center items-center'>
+              <Image src={'/photo.jpg'} width={56} height={90} layout='intrinsic' alt='Photo Guilherme'/>
+            </div>
             <h2 className="ml-2 text-2xl font-bold">Guilherme Ferreira</h2>
           </div>
           <div className="flex space-x-4">
             <a
               href="https://github.com/guibrbs"
               target={'_blank'}
+              rel="noreferrer"
               className="hover:brightness-200"
             >
               <SiGithub size={20} />
@@ -28,6 +32,7 @@ export function About() {
             <a
               href="https://www.linkedin.com/in/guibrbs/"
               target={'_blank'}
+              rel="noreferrer"
               className="hover:brightness-200"
             >
               <SiLinkedin size={20} />
@@ -35,6 +40,7 @@ export function About() {
             <a
               href={'mailto: mrguilhermeferreira@gmail.com'}
               target={'_blank'}
+              rel="noreferrer"
               className="hover:brightness-200"
             >
               <SiGmail size={20} />
@@ -42,6 +48,7 @@ export function About() {
             <a
               href="/CurriculoGuilhermeFerreira.pdf"
               target={'_blank'}
+              rel="noreferrer"
               className="hover:brightness-200"
             >
               <BsFileTextFill size={20} />
@@ -79,7 +86,7 @@ export function About() {
               className="font-extrabold underline decoration-1 dark:text-textLight-500"
               target={'_blank'}
             >
-              Orc'estra Gamificação 
+              Orc&apos;estra Gamificação 
             </a>
             {' '} a <span className={textBold}>primeira empresa júnior de gamificação do Brasil</span> e está sendo um
             momento muito <span className={textBold}> prazeroso e divertido.</span>

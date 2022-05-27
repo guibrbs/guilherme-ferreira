@@ -3,6 +3,7 @@ import { ProjectsMap } from './ProjectsMap'
 import { IoIosArrowForward } from 'react-icons/io'
 import { BsBoxArrowInUpRight } from 'react-icons/bs'
 import Link from 'next/link'
+import Image from 'next/image'
 
 export function Projects() {
   const routes = useRouter()
@@ -42,10 +43,12 @@ export function Projects() {
                 </h1>
                 <div className="flex flex-wrap justify-center">{project.tech}</div>
               </div>
-              <img
+              <Image
                 src={project.img}
                 alt={project.alt}
-                className="w-full max-w-[400px] h-full max-h-[272px] rounded-xl"
+                width={400}
+                height={272}
+                className="rounded-xl"
               />
             </div>
           </div>
