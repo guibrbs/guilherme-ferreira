@@ -2,7 +2,7 @@ import { UnderlineLayout } from '../UnderlineLayout'
 import { Model3D } from './Model3D'
 
 export function CuriositySection() {
-  const boldClass = 'font-bold italic dark:text-textLight-500'
+  const boldClass = 'font-bold dark:text-textLight-500'
   return (
     <div className="mt-32 flex h-full w-full justify-center">
       <section className="flex h-full max-h-max w-full max-w-customWidth items-center justify-evenly relative 
