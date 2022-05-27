@@ -1,5 +1,5 @@
 import '../styles/globals.css'
-import "@fontsource/exo/variable.css"
+import "@fontsource/exo/latin.css"
 import type { AppProps } from 'next/app'
 import { ThemeProvider } from 'next-themes'
 import { Header } from '../components/Header'
