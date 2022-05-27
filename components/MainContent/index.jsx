@@ -8,7 +8,7 @@ export function MainContent(){
         <div className='flex w-full h-full justify-center mt-36'>
             <section className='w-full max-w-customWidth h-full max-h-max flex flex-1 justify-center space-x-12 relative after:absolute 
                 after:content[""] after:w-full after:h-px after:bg-light-700 dark:after:bg-dark-100 after:-bottom-16'>
-                <Avatar />
+                <Avatar/>
                 <div className='w-full max-w-txtWidth'>
                     <p className='text-[2.9rem] leading-[2.9rem] font-bold '>Guilherme Ferreira</p>
                     <p className='text-2xl font-light dark:text-textLight-600'>Web &amp; Mobile Developer (Fullstack)</p>

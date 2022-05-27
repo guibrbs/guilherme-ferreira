@@ -3,6 +3,8 @@ import Image from 'next/image'
 
 export default function Avatar(){
     return(
-        <Image src={AvatarImage} width={235} height={417} alt={'Avatar'}/>
+        <div className='w-full max-w-[235px] max-md:hidden'>
+            <Image src={AvatarImage} layout={'intrinsic'} alt={'Avatar'} priority/>
+        </div>
     )
 }
