@@ -26,13 +26,13 @@ export function Navigation( { hamburguerMenu } ) {
   return (
     <LayoutGroup>
       <div className={`flex max-md:fixed max-md:-bottom-14 max-md:-right-28 max-md:opacity-0 max-md:bg-light-100 max-md:dark:bg-dark-100 max-md:p-2
-       max-md:rounded-md duration-300 pointer-events-none 
+       max-md:rounded-md duration-300 
       ${hamburguerMenu ? 'max-md:right-2 max-md:opacity-100 pointer-events-auto' : ''}`}>
         {links.map(({ name, href, id }) => {
           return (
             <div key={id} className='group relative mx-4 flex w-fit'>
               {id === 3 ? (
-                <BsGithub style={{ marginRight: '4px', marginTop: '4px' }}/>
+                <BsGithub style={{ marginRight: '4px', marginTop: '4px' }} />
               ) : (
                 <></>
               )}
