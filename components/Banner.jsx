@@ -86,20 +86,21 @@ export function Banner({ homepage }) {
           .map((banner) => {
             return (
               <a href={banner.link} className="group mt-12" key={banner.id}>
-                <div className="relative flex h-60 w-full rounded-3xl border border-light-700 dark:border-dark-100">
+                <div className="relative flex h-60 w-full rounded-3xl border border-light-700 dark:border-dark-100 
+                max-md:max-w-[400px] max-md:h-[130px] max-md:rounded-lg">
                   <div
                     className="absolute z-0 h-full w-full max-w-xs rounded-3xl bg-light-100 transition-all duration-500 
-                    ease-in-out group-hover:max-w-full dark:bg-dark-100"
+                    ease-in-out group-hover:max-w-full dark:bg-dark-100 max-md:rounded-lg max-md:max-w-[100px]"
                   />
-                  <div className="z-10 w-full max-w-imgWidth rounded-l-3xl overflow-hidden">
+                  <div className="z-10 w-full max-w-imgWidth rounded-l-3xl overflow-hidden max-md:rounded-l-md">
                     <Image src={banner.img} layout='intrinsic' width={329} height={239} alt={banner.alt} />
                   </div>
                   <div className="relative ml-6 mr-6 flex h-full w-full flex-col justify-center">
-                    <h1 className="mb-1 text-2xl font-bold">{banner.title}</h1>
-                    <p className="text-lg leading-5 dark:text-textLight-600">
+                    <h1 className="mb-1 text-2xl font-bold max-md:text-base ">{banner.title}</h1>
+                    <p className="text-lg leading-5 dark:text-textLight-600 max-md:text-[8px] max-md:leading-[10px]">
                       {banner.description}
                     </p>
-                    <p className="relative mt-1 self-end text-xl font-bold">
+                    <p className="relative mt-1 self-end text-xl font-bold max-md:text-[10px]">
                       Saiba mais
                       <UnderlineLayout />
                     </p>
