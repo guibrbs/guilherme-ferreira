@@ -7,12 +7,14 @@ export function MainContent(){
     return(
         <div className='flex w-full h-full justify-center mt-36'>
             <section className='w-full max-w-customWidth h-full max-h-max flex flex-1 justify-center space-x-12 relative after:absolute 
-                after:content[""] after:w-full after:h-px after:bg-light-700 dark:after:bg-dark-100 after:-bottom-16'>
+                after:content[""] after:w-full after:h-px after:bg-light-700 dark:after:bg-dark-100 after:-bottom-16 max-sm:space-x-0 max-sm:px-4'>
                 <Avatar/>
-                <div className='w-full max-w-txtWidth'>
-                    <p className='text-[2.9rem] leading-[2.9rem] font-bold '>Guilherme Ferreira</p>
-                    <p className='text-2xl font-light dark:text-textLight-600'>Web &amp; Mobile Developer (Fullstack)</p>
-                    <p className='w-full font-light text-2xl mt-6 dark:text-textLight-600 text-dark-500 leading-7'>
+                <div className='w-full max-w-txtWidth max-sm:max-w-[350px]'>
+                    <p className='text-[2.9rem] leading-[2.9rem] font-bold max-sm:text-[34px]'>Guilherme Ferreira</p>
+                    <p className='text-2xl font-light dark:text-textLight-600 max-sm:text-[18px] max-sm:leading-3'>
+                        Web &amp; Mobile Developer (Fullstack)
+                    </p>
+                    <p className='w-full font-light text-2xl mt-6 dark:text-textLight-600 text-dark-500 leading-7 max-sm:text-xl max-sm:leading-6'>
                         Sou estudante de <b className='dark:text-textLight-500 font-bold'>Engenharia de Software</b> pela 
                         <b className='dark:text-textLight-500 font-bold'> Universidade de Brasília</b>. 
                         Esse é o meu portfólio, onde você consegue encontrar alguns de meus projetos 
