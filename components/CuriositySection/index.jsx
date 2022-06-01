@@ -9,10 +9,10 @@ export function CuriositySection() {
       after:content[''] after:w-full after:h-px after:bg-light-700 after:dark:bg-dark-100 after:absolute after:-bottom-16 max-md:flex-col">
         <div className="w-72 max-md:w-full max-md:max-w-[293px]">
           <p className="flex h-14 w-full max-w-[238px] items-center justify-center rounded-lg bg-light-100 text-3xl font-bold dark:bg-dark-100
-          max-md:m-auto">
+          max-md:m-auto max-sm:text-2xl ">
             CURIOSIDADE
           </p>
-          <p className="mt-5 text-2xl leading-7 dark:text-textLight-600 max-md:text-center">
+          <p className="mt-5 text-2xl leading-7 dark:text-textLight-600 max-md:text-center max-sm:text-xl max-sm:leading-6">
             <span
               className={`${boldClass} block after:not-italic after:content-['⚡']`}
             >
