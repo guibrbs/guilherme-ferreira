@@ -104,7 +104,7 @@ const habilities = [
 
 export function Habilities() {
   return (
-    <section className="mt-4 flex w-full flex-wrap justify-between">
+    <section className="mt-4 flex w-full flex-wrap justify-between max-md:justify-center max-md:gap-7">
       {habilities.map((habilities, key) => {
         return (
           <div

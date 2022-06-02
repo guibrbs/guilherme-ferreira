@@ -85,7 +85,7 @@ export function Banner({ homepage }) {
           )
           .map((banner) => {
             return (
-              <a href={banner.link} className="group mt-12" key={banner.id}>
+              <a href={banner.link} className="group mt-12 max-sm:mt-5" key={banner.id}>
                 <div className="relative flex h-60 w-full rounded-3xl border border-light-700 dark:border-dark-100 
                 max-sm:max-w-[320px] max-sm:h-[106px] max-sm:rounded-xl">
                   <div

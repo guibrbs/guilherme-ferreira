@@ -9,14 +9,14 @@ export function Projects() {
   const routes = useRouter()
   const {slug} = routes.query
   return (
-    <div className="mt-36 flex h-fit w-full justify-center">
+    <div className="mt-36 flex h-fit w-full justify-center max-md:px-10 max-sm:mt-24">
       {ProjectsMap.map((project) => {
         if(slug === project.routes)
         return (
           <div className="w-full max-w-customWidth" key={project.id}>
             <div className="flex items-center space-x-4">
               <Link href={'/projetos'}>
-                <a className="text-xl text-elementary-300 dark:text-brand-300 underline">
+                <a className="text-xl text-elementary-300 dark:text-brand-300 underline max-sm:text-lg">
                   Projetos
                 </a>
               </Link>
@@ -24,7 +24,7 @@ export function Projects() {
               <div className="flex cursor-pointer items-center justify-center">
                 <a
                   href={project.link}
-                  className="text-3xl font-bold flex items-center justify-center"
+                  className="text-3xl font-bold flex items-center justify-center max-sm:text-xl max-sm:leading-5"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -36,9 +36,9 @@ export function Projects() {
             <p className="mt-5 text-justify text-xl font-normal leading-7 dark:text-textLight-600">
               {project.description}
             </p>
-            <div className="mt-3 flex w-full justify-between">
-              <div className="flex w-full max-w-xs flex-col flex-wrap">
-                <h1 className="text-[1.75rem] font-bold ">
+            <div className="mt-3 flex w-full justify-between max-sm:flex-col">
+              <div className="flex w-full max-w-xs flex-col flex-wrap mb-5 max-sm:max-w-full">
+                <h1 className="text-[1.75rem] font-bold max-sm:text-2xl max-sm:text-center">
                   Tecnologias utilizadas
                 </h1>
                 <div className="flex flex-wrap justify-center">{project.tech}</div>

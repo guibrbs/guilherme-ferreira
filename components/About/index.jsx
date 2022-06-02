@@ -6,19 +6,21 @@ import { Habilities } from './Habilities'
 export function About() {
   const textBold = 'font-bold dark:text-textLight-500'
   const paragraphStyle =
-    'mt-7 text-justify text-xl leading-[22.5px] tracking-wide text-dark-100 dark:text-textLight-600'
+    'mt-7 text-justify text-xl leading-[22.5px] tracking-wide text-dark-100 dark:text-textLight-600 max-sm:text-lg max-sm:leading-6'
   return (
     <div className="mt-14 flex h-full w-full justify-center">
-      <section className="h-max w-full max-w-customWidth">
+      <section className="h-max w-full max-w-customWidth max-md:px-10">
         <div
           className="relative mt-9 flex items-end justify-between after:absolute after:-bottom-4 
           after:h-px after:w-full after:bg-light-700 after:content-[''] dark:after:bg-dark-100"
         >
           <div className="flex w-full items-end">
-            <div className='w-[56px] h-[56px] overflow-hidden rounded-full flex justify-center items-center'>
+            <div className=' w-full max-w-[56px] h-full max-h-[56px] overflow-hidden rounded-full flex justify-center 
+              items-center max-sm:max-w-[40px] max-sm:max-h-[40px]'
+            >
               <Image src={'/photo.jpg'} width={56} height={90} layout='intrinsic' alt='Photo Guilherme'/>
             </div>
-            <h2 className="ml-2 text-2xl font-bold">Guilherme Ferreira</h2>
+            <h2 className="ml-2 text-2xl font-bold max-sm:text-base max-sm:leading-4 max-md:leading-5">Guilherme Ferreira</h2>
           </div>
           <div className="flex space-x-4">
             <a
@@ -93,7 +95,7 @@ export function About() {
             momento muito <span className={textBold}> prazeroso e divertido.</span>
           </p>
         </div>
-        <h2 className="mt-7 text-2xl font-bold">Habilidades</h2>
+        <h2 className="mt-7 text-2xl font-bold max-md:text-center">Habilidades</h2>
         <Habilities />
       </section>
     </div>
