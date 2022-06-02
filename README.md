@@ -1,23 +1,45 @@
-# Next.js + Tailwind CSS Example
+<h1 align=center>Repositório do portfólio</h1>
 
-This example shows how to use [Tailwind CSS](https://tailwindcss.com/) [(v3.0)](https://tailwindcss.com/blog/tailwindcss-v3) with Next.js. It follows the steps outlined in the official [Tailwind docs](https://tailwindcss.com/docs/guides/nextjs).
 
-## Deploy your own
+## Objetivo:
+Criar um portfólio pessoal utilizando as seguintes tecnologias:
+<div align='center'>
+    <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" />
+    <img src="https://img.shields.io/badge/TailwindCSS-1572B6?style=for-the-badge&logo=tailwindcss&logoColor=white" />
+    <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" />
+    <img src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white" />
+    <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" />
+    <img src="	https://img.shields.io/badge/NextJS-000?style=for-the-badge&logo=next.js&logoColor=00" />
+    <img src="	https://img.shields.io/badge/ThreeJs-fff?style=for-the-badge&logo=three.js&logoColor=000" />
+    <img src="https://img.shields.io/badge/eslint-3A33D1?style=for-the-badge&logo=eslint&logoColor=white" />
+    <img src="https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white" />
+    <img src="https://img.shields.io/badge/Prettier-1c2930?style=for-the-badge&logo=prettier&logoColor=white" />
+</div>
 
-Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=next-example) or preview live with [StackBlitz](https://stackblitz.com/github/vercel/next.js/tree/canary/examples/with-tailwindcss)
+#
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/vercel/next.js/tree/canary/examples/with-tailwindcss&project-name=with-tailwindcss&repository-name=with-tailwindcss)
+<h2><b> Semântica de Commits </b> </h2>
 
-## How to use
+Os commits devem seguir o seguinte padrão:
 
-Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init) or [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/) to bootstrap the example:
+<h3><b>Principios</b></h3>
 
-```bash
-npx create-next-app --example with-tailwindcss with-tailwindcss-app
-# or
-yarn create next-app --example with-tailwindcss with-tailwindcss-app
-# or
-pnpm create next-app -- --example with-tailwindcss with-tailwindcss-app
+### Commits atômicos
+- Sempre dividir em pequenos e significativos commits, fazendo com que cada commit tenha apenas uma funcionalidade.
+
+<h3><b>Formato</b></h3>
+
+```
+<tipo>: assunto
 ```
 
-Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
+### Tipos:
+```Para inserir um emoji, basta digitar: ":nome_do_emoji:". Exemplo: ":bulb:"```
+[***Lista de emojis disponíveis em markdown***](https://gist.github.com/rxaviers/7360908)
+- :rocket: quando adicionar código do front-end ```:rocket:```
+- :repeat: quando alguma alteração for feita ```:repeat:```
+- :cool: quando melhorias de formato/estrutura do código ```:cool:```
+- :bug: quando consertar um problema ```:bug:```
+- :fire: quando remover código ou arquivos ```:fire:```
+- :arrow_up: quando realizar o upgrade de dependências ```:arrow_up:```
+- :arrow_down: quando realizar downgrade de dependências ```:arrow_down:```
