@@ -9,8 +9,8 @@ Criar um portfólio pessoal utilizando as seguintes tecnologias:
     <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" />
     <img src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white" />
     <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" />
-    <img src="	https://img.shields.io/badge/NextJS-000?style=for-the-badge&logo=next.js&logoColor=00" />
-    <img src="	https://img.shields.io/badge/ThreeJs-fff?style=for-the-badge&logo=three.js&logoColor=000" />
+    <img src="https://img.shields.io/badge/NextJS-000?style=for-the-badge&logo=next.js&logoColor=00" />
+    <img src="https://img.shields.io/badge/ThreeJs-fff?style=for-the-badge&logo=three.js&logoColor=000" />
     <img src="https://img.shields.io/badge/eslint-3A33D1?style=for-the-badge&logo=eslint&logoColor=white" />
     <img src="https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white" />
     <img src="https://img.shields.io/badge/Prettier-1c2930?style=for-the-badge&logo=prettier&logoColor=white" />
