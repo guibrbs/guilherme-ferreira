@@ -2,11 +2,17 @@ import { ChatTeardropDots, CheckCircle } from 'phosphor-react'
 import { MdDriveFileRenameOutline, MdMail } from 'react-icons/md'
 import emailjs from '@emailjs/browser'
 import { AnimatePresence, motion } from 'framer-motion'
-import { useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 
-export function Form() {
+export function Form( { isToForm } ) {
   const [isEmailSent, setIsEmailSent] = useState(false)
+  const myRef = useRef(null)
 
+  useEffect(() => {
+    if(isToForm){
+      myRef.current?.scrollIntoView({ behavior: 'smooth' })
+    }
+  }, [isToForm])
   const titleInputStyle =
     'font-semibold text-base leading-4 text-dark-500 mb-1 after:content-["*"] after:ml-0.5 after:text-red-500 dark:text-textLight-500 max-sm:text-[8px] max-sm:mb-0'
   const inputStyle =
@@ -37,7 +43,7 @@ export function Form() {
       <section
         className="mt-32 flex h-[576px] w-full max-w-customWidth flex-col items-center justify-center rounded-3xl border-[1px]
      border-stone-300 bg-light-100 dark:border-zinc-700 dark:bg-dark-100 max-sm:max-w-[320px] max-sm:h-[310px] max-sm:rounded-xl"
-      >
+      ref={myRef}>
         <h1 className="text-2xl font-semibold text-dark-500 dark:text-textLight-500 max-sm:text-sm">
           Envie sua mensagem
         </h1>

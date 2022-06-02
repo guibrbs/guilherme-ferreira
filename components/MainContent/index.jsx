@@ -3,7 +3,13 @@ import { BsGithub } from "react-icons/bs";
 import { BsLinkedin } from "react-icons/bs";
 import Link from 'next/link';
 
-export function MainContent(){
+export function MainContent( { setIsToForm } ){
+    const handleForm = () => {
+        setIsToForm(true)
+        setTimeout(() => {
+            setIsToForm(false)
+        }, 2000)
+    }
     return(
         <div className='flex w-full h-full justify-center mt-36 max-sm:mt-24'>
             <section className='w-full max-w-customWidth h-full max-h-max flex flex-1 justify-center space-x-12 relative after:absolute 
@@ -24,7 +30,8 @@ export function MainContent(){
                     </p>
                     <div className='flex mt-7 items-center space-x-3 max-sm:mt-4'>
                         <button className='w-52 h-12 dark:bg-textLight-500 bg-dark-500 dark:text-dark-500 text-textLight-500 
-                        font-bold text-xl rounded-lg hover:brightness-110 transition-all'>
+                        font-bold text-xl rounded-lg hover:brightness-110 transition-all'
+                        onClick={handleForm}>
                             Entre em contato
                         </button>
                         <Link href="https://github.com/guibrbs">
