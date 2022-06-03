@@ -11,13 +11,13 @@ export function MainContent( { setIsToForm } ){
         }, 2000)
     }
     return(
-        <div className='flex w-full h-full justify-center mt-36 max-sm:mt-24'>
+        <div className='flex w-full h-full justify-center mt-32 max-sm:mt-24'>
             <section className='w-full max-w-customWidth h-full max-h-max flex flex-1 justify-center space-x-12 relative after:absolute 
                 after:content[""] after:w-full after:h-px after:bg-light-700 dark:after:bg-dark-100 after:-bottom-16 max-sm:space-x-0 max-sm:px-10'>
                 <Avatar/>
                 <div className='w-full max-w-txtWidth max-sm:max-w-[350px]'>
-                    <p className='text-[2.9rem] leading-[2.9rem] font-bold max-sm:text-[30px] max-sm:leading-[30px]'>Guilherme Ferreira</p>
-                    <p className='text-2xl font-light dark:text-textLight-600 max-sm:text-[15px] max-sm:leading-[17px]'>
+                    <p className='text-[2.9rem] leading-[2.9rem] font-bold max-sm:text-[30px] max-sm:leading-[30px] max-sm:text-center'>Guilherme Ferreira</p>
+                    <p className='text-2xl font-light dark:text-textLight-600 max-sm:text-[15px] max-sm:leading-[17px] max-sm:text-center'>
                         Web &amp; Mobile Developer (Fullstack)
                     </p>
                     <p className='w-full font-light text-2xl mt-6 dark:text-textLight-600 text-dark-500 leading-7 max-sm:text-xl max-sm:leading-6
@@ -30,7 +30,7 @@ export function MainContent( { setIsToForm } ){
                     </p>
                     <div className='flex mt-7 items-center space-x-3 max-sm:mt-4'>
                         <button className='w-52 h-12 dark:bg-textLight-500 bg-dark-500 dark:text-dark-500 text-textLight-500 
-                        font-bold text-xl rounded-lg hover:brightness-110 transition-all'
+                        font-bold text-xl rounded-lg hover:brightness-110 transition-all max-sm:text-lg'
                         onClick={handleForm}>
                             Entre em contato
                         </button>

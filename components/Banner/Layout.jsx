@@ -3,7 +3,7 @@ import { UnderlineLayout } from "../UnderlineLayout"
 
 const Layout = ({ children, homepage }) => (
     <div className="flex h-full max-h-max w-full justify-center">
-      <section className={`mt-32 flex w-full max-w-customWidth flex-col items-center relative max-sm:mt-24 max-sm:px-4 ${
+      <section className={`mt-32 flex w-full max-w-customWidth flex-col items-center relative max-sm:mt-28 max-sm:px-4 ${
         homepage ? 'after:content-[""] after:w-full after:h-px after:bg-light-700 after:dark:bg-dark-100 after:absolute after:-bottom-16'
         : ''
       }`}>
