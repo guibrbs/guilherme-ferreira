@@ -35,6 +35,7 @@ export function Form( { isToForm } ) {
         setTimeout(() => {
           setIsEmailSent(false)
         }, "4000")
+        e.target.reset()
       })
       .catch((err) => console.log(err))
   }
