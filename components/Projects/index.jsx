@@ -9,7 +9,7 @@ export function Projects() {
   const routes = useRouter()
   const {slug} = routes.query
   return (
-    <div className="mt-36 flex h-fit w-full justify-center max-md:px-10 max-sm:mt-24">
+    <div className="mt-24 flex h-fit w-full justify-center max-md:px-10 max-sm:mt-24">
       {ProjectsMap.map((project) => {
         if(slug === project.routes)
         return (
