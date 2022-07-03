@@ -7,7 +7,7 @@ import { Footer } from '../components/Footer'
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
-    <ThemeProvider attribute="class">
+    <ThemeProvider defaultTheme='light' attribute="class">
       <div className='flex flex-col h-screen justify-between'>
         <Header />
         <Component {...pageProps} />
