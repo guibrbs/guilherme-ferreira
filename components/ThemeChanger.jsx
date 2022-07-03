@@ -1,6 +1,6 @@
 const { useTheme } = require('next-themes')
 const { useEffect, useState } = require('react')
-import { animate, AnimatePresence, motion } from 'framer-motion'
+import { AnimatePresence, motion } from 'framer-motion'
 import { Moon, Sun } from 'phosphor-react'
 
 export const ThemeChanger = () => {

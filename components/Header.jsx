@@ -1,7 +1,7 @@
 import { ThemeChanger } from './ThemeChanger'
 import { Navigation } from './Navigation'
 import Link from 'next/link'
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
 
 export function Header() {
   const [hamburguerMenu, setHamburguerMenu] = useState(false)
